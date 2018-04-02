@@ -595,88 +595,88 @@
   <div id="pricing">
     <div class="container">
       <!-- action="mailto:mpastarini@ubp.edu.ar" -->
-      <form enctype='application/json' id="myform" name="nameform" method="POST" onsubmit="jForm.valid(event)">
+      <form enctype='application/json' id="myform" action="mailto:someone@example.com" name="nameform" method="POST" onsubmit="jForm.valid(event)">
         <h4 class="mb-3">¿En qué Mundial debutó Maradona?</h4>
+        <h2 id="correccionpreg1"></h2>
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
-            <input id="iar78" name="debut" type="radio" value="var78" class="custom-control-input">
-            <label class="custom-control-label" for="iar78">Argentina 78</label>
+            <label><input id="iar78" name="debut" type="radio" class="custom-control-input" value="var78"> Argentina 78 </label>
           </div>
           <div class="custom-control custom-radio">
-            <input id="ies82" name="debut" type="radio" class="custom-control-input">
-            <label class="custom-control-label" for="ies82" value="ves82">España 82</label>
+            <label><input id="ies82" name="debut" type="radio" class="custom-control-input" value="ves82"> España 82 </label>            
           </div>
           <div class="custom-control custom-radio">
-            <input id="ime86" name="debut" type="radio" class="custom-control-input">
-            <label class="custom-control-label" for="ime86" value="vme86">México 86</label>
+            <label><input id="ime86" name="debut" type="radio" class="custom-control-input" value="vme86"> Mexico 86 </label>            
           </div>
           <div class="custom-control custom-radio">
-            <input id="iit90" name="debut" type="radio" class="custom-control-input">
-            <label class="custom-control-label" for="iit90" value="vit90">Italia 90</label>
+            <label><input id="iit90" name="debut" type="radio" class="custom-control-input" value="vit90"> Italia 90 </label>            
           </div>
         </div>
 
         <h4 class="mb-3">¿En que año se consagro campeon mundial Argentina por segunda vez?</h4>
+        <h2 id="correccionpreg2"></h2>
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
-            <input id="im86" name="arcampeon" type="radio" value="vm86" class="custom-control-input">
-            <label class="custom-control-label" for="im86">Mundial 86</label>
+            <label><input id="im86" name="arcampeon" type="radio" class="custom-control-input" value="vm86"> Mundial 86 </label>            
           </div>
           <div class="custom-control custom-radio">
-            <input id="im78" name="arcampeon" type="radio" class="custom-control-input">
-            <label class="custom-control-label" for="im78" value="vm78">Mundial 78</label>
+            <label><input id="im78" name="arcampeon" type="radio" class="custom-control-input" value="vm78"> Mundial 78 </label>
           </div>
           <div class="custom-control custom-radio">
-            <input id="im90" name="arcampeon" type="radio" class="custom-control-input">
-            <label class="custom-control-label" for="im90" value="vm90">Mundial 90</label>
+            <label><input id="im90" name="arcampeon" type="radio" class="custom-control-input" value="vm90"> Mundial 90 </label>            
           </div>
           <div class="custom-control custom-radio">
-            <input id="im82" name="arcampeon" type="radio" class="custom-control-input">
-            <label class="custom-control-label" for="im82" value="vm82">Mundial 82</label>
+            <label><input id="im82" name="arcampeon" type="radio" class="custom-control-input" value="vm82"> Mundial 82 </label>
+            <!-- de la siguiente forma obtengo el value "on" cuando deberia obtener "vm82" nose porque pasa eso, y pasaria en todos si
+            estuviera implementado de la misma forma todos los input -->
+            <!-- <input id="im82" name="arcampeon" type="radio" class="custom-control-input">
+            <label class="custom-control-label" for="im82" value="vm82">Mundial 82</label> -->
           </div>
         </div>
 
         <h4 class="mb-3">¿Que jugador tiene mas presencias en la seleccion mayor Argentina?</h4>
+        <h2 id="correccionpreg3"></h2>
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
             <label>
-              <input id="ipjm" name="maxpresencias" type="radio" class="custom-control-input"> Javier Mascherano </label>
+              <input id="ipjm" name="maxpresencias" type="radio" class="custom-control-input" value="vpjm"> Javier Mascherano </label>
           </div>
           <div class="custom-control custom-radio">
             <label>
-              <input id="iplm" name="maxpresencias" type="radio" class="custom-control-input"> Lionel Messi </label>
+              <input id="iplm" name="maxpresencias" type="radio" class="custom-control-input" value="vplm"> Lionel Messi </label>
           </div>
           <div class="custom-control custom-radio">
             <label>
-              <input id="iphc" name="maxpresencias" type="radio" class="custom-control-input"> Hernan Crespo </label>
+              <input id="iphc" name="maxpresencias" type="radio" class="custom-control-input" value="vphc"> Hernan Crespo </label>
           </div>
           <div class="custom-control custom-radio">
             <label>
-              <input id="ipgb" name="maxpresencias" type="radio" class="custom-control-input"> Gabriel Batistuta </label>
+              <input id="ipgb" name="maxpresencias" type="radio" class="custom-control-input" value="vpgb"> Gabriel Batistuta </label>
           </div>
         </div>
 
         <h4 class="mb-3">¿Que jugador es el maximo goleador de la seleccion mayor Argentina?</h4>
+        <h2 id="correccionpreg4"></h2>
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
             <label>
-              <input id="igdm" name="maxgoles" type="radio" class="custom-control-input"> Diego Maradona </label>
+              <input id="igdm" name="maxgoles" type="radio" class="custom-control-input" value="vgdm"> Diego Maradona </label>
           </div>
           <div class="custom-control custom-radio">
             <label>
-              <input id="iglm" name="maxgoles" type="radio" class="custom-control-input"> Lionel Messi </label>
+              <input id="iglm" name="maxgoles" type="radio" class="custom-control-input" value="vglm"> Lionel Messi </label>
           </div>
           <div class="custom-control custom-radio">
             <label>
-              <input id="ighc" name="maxgoles" type="radio" class="custom-control-input"> Hernan Crespo </label>
+              <input id="ighc" name="maxgoles" type="radio" class="custom-control-input" value="vghc"> Hernan Crespo </label>
           </div>
           <div class="custom-control custom-radio">
             <label>
-              <input id="iggb" name="maxgoles" type="radio" class="custom-control-input"> Gabriel Batistuta </label>
+              <input id="iggb" name="maxgoles" type="radio" class="custom-control-input" value="vggb"> Gabriel Batistuta </label>
           </div>
         </div>
 
@@ -684,78 +684,81 @@
         <!-- 4 (cuatro) preguntas con varias opciones de respuesta -->
 
         <h4 for="country">Que jugadores fueron campeones mundiales en el año 86?</h4>
+        <h2 id="correccionpreg5"></h2>
 
         <div class="d-block my-3">
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="campeones86" class="custom-control-input" id="iccc"> Claudio Caniggia </label>
+              <input type="checkbox" name="campeones86" class="custom-control-input" id="iccc" value="vccc"> Claudio Caniggia </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="campeones86" class="custom-control-input" id="icor"> Oscar Ruggeri</label>
+              <input type="checkbox" name="campeones86" class="custom-control-input" id="icor" value="vcor"> Oscar Ruggeri</label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="campeones86" class="custom-control-input" id="icjb"> Jorge Burruchaga </label>
+              <input type="checkbox" name="campeones86" class="custom-control-input" id="icjb" value="vcjb"> Jorge Burruchaga </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="campeones86" class="custom-control-input" id="icmk"> Mario Alberto Kempes </label>
+              <input type="checkbox" name="campeones86" class="custom-control-input" id="icmk" value="vcmk"> Mario Alberto Kempes </label>
           </div>
         </div>
 
 
         <h4 for="country">Quienes de estos tecnicos dirigieron la seleccion Argentina?</h4>
+        <h2 id="correccionpreg6"></h2>
 
         <div class="d-block my-3">
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="dtargentina" class="custom-control-input" id="idtab"> Alfio Basile </label>
+              <input type="checkbox" name="dtargentina" class="custom-control-input" id="idtab" value="vdtab"> Alfio Basile </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="dtargentina" class="custom-control-input" id="idtcb"> Carlos Bianchi </label>
+              <input type="checkbox" name="dtargentina" class="custom-control-input" id="idtcb" value="vdtcb"> Carlos Bianchi </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="dtargentina" class="custom-control-input" id="idtcl"> Caruso Lombardi </label>
+              <input type="checkbox" name="dtargentina" class="custom-control-input" id="idtcl" value="vdtcl"> Caruso Lombardi </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="dtargentina" class="custom-control-input" id="idtas"> Alejandro Sabella </label>
+              <input type="checkbox" name="dtargentina" class="custom-control-input" id="idtas" value="vdtas"> Alejandro Sabella </label>
           </div>
         </div>
 
         </br>
 
 
-        <h4 for="country">Que judores marcaron goles el mundial pasado?</h4>
+        <h4 for="country">Que jugadores marcaron goles el mundial pasado?</h4>
+        <h2 id="correccionpreg7"></h2>
 
         <div class="d-block my-3">
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="goles2014" class="custom-control-input" id="igolmr"> Marcos Rojo </label>
+              <input type="checkbox" name="goles2014" class="custom-control-input" id="igolmr" value="vgolmr"> Marcos Rojo </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="goles2014" class="custom-control-input" id="igoldm"> Angel Di Maria </label>
+              <input type="checkbox" name="goles2014" class="custom-control-input" id="igoldm" value="vgoldm"> Angel Di Maria </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="goles2014" class="custom-control-input" id="igolgh"> Gonzalo Higuain </label>
+              <input type="checkbox" name="goles2014" class="custom-control-input" id="igolgh" value="vgolgh"> Gonzalo Higuain </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="goles2014" class="custom-control-input" id="igolrp"> Rodrigo Palacio </label>
+              <input type="checkbox" name="goles2014" class="custom-control-input" id="igolrp" value="vgolrp"> Rodrigo Palacio </label>
           </div>
         </div>
 
@@ -763,36 +766,37 @@
         </br>
 
         <h4 for="country">Contra que paises juega argentina en el mundial de Rusia?</h4>
+        <h2 id="correccionpreg8"></h2>
 
         <div class="d-block my-3">
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="imx"> Mexico </label>
+              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="igrupome" value="vgrupome"> Mexico </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="imx"> Croacia </label>
+              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="igrupocr" value="vgrupocr"> Croacia </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="imx"> Islandia </label>
+              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="igrupois" value="vgrupois"> Islandia </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="imx"> España </label>
+              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="igrupoes" value="vgrupoes"> España </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="imx"> Nigeria </label>
+              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="igruponi" value="vgruponi"> Nigeria </label>
           </div>
 
           <div class="custom-control custom-checkbox">
             <label>
-              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="imx"> Rusia </label>
+              <input type="checkbox" name="rivalesarg" class="custom-control-input" id="igruporu" value="vgruporu"> Rusia </label>
           </div>
 
         </div>
@@ -806,6 +810,7 @@
           <h4 for="country">Que chances crees que tiene la seleccion de ganar este mundial? :
             <label value="0" id="ichances-valoracion" name="nchances-valoracion"></label>
           </h4>
+          <h2 id="correccionpreg9"></h2>
           <input type="range" id="ichancesarg" name="chancesarg" min="0" max="100" value="0">
         </div>
 
@@ -816,7 +821,7 @@
           <h4 for="country">Del 1 al 10, como calificarias el estilo de juego de San Paoli? :
             <label id="isanpa-valoracion"></label>
           </h4>
-
+          <h2 id="correccionpreg10"></h2>
           <input type="range" id="isanpa" name="puntajesanpaoli" min="1" max="10" value="1">
         </div>
 
