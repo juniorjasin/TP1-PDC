@@ -243,6 +243,23 @@ var jForm = {
 
         if ($('#correccionpreg10').html('') != '') { $('#correccionpreg10').html(''); }
         $('#correccionpreg10').append("Muchas gracias por tu opinion!");
-        $('#correccionpreg10').css({ color: "#10b600" });        
+        $('#correccionpreg10').css({ color: "#10b600" });
+
+        this.deshabilitar();
+    },
+    deshabilitar: function () {
+        $("input[name=debut]").prop('disabled',true);
+        $("input[name=arcampeon]").prop('disabled',true);
+        $("input[name=maxpresencias]").prop('disabled',true);
+        $("input[name=maxgoles]").prop('disabled',true);
+        $("input[name=campeones86]").prop('disabled',true);
+        $("input[name=dtargentina]").prop('disabled',true);
+        $("input[name=goles2014]").prop('disabled',true);
+        $("input[name=rivalesarg]").prop('disabled',true);
+        $("input[name=chancesarg]").prop('disabled',true);
+        $("input[name=puntajesanpaoli]").prop('disabled',true);
+        $("input[name=nombre]").prop('disabled',true);
+        $("input[name=nacimiento]").prop('disabled',true);
+        $("input[name=mail]").prop('disabled',true);
     }
 }
