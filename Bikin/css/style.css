@@ -18,11 +18,16 @@
 *******Typography******
 **************************/
 body {
-  background: #fff;
+  /* background: #fff; */
   font-family:'Roboto', Arial, sans-serif;
   color:#333;
   line-height:1.6em;
   overflow-x:hidden;
+
+  
+  /* background-image: url("./img/russia2018-theme.jpg"); */
+  /* background-color: #cccccc; */
+ 
 }
 
 h1,
@@ -317,39 +322,7 @@ hr {
   transition:  color 300ms, background-color 300ms;
 }
 
-/*************************
-*******contenedor1******
-**************************/
 
-#video-texto {
-  padding-top:90px;
-	padding-bottom:40px;
-  background:#f4f4f4;
-  
-  /* border:1px solid red; */
-}
-
-.contenedor-video-texto{
-  /* width: 700px; */
-  /* margin: 0 auto; */
-  overflow: hidden;
-}
-
-
-/*************************
-*******parrafo del video******
-**************************/
-.texto-motivacional {
-  /* position: relative; */
-  width: 17em;
-  height: 11em;
-  padding: 1em;
-  line-height: 1em;
-	font-size: 4em;
-  color:#0BA9F9;
-  /* border:1px solid red; */
-  float: left;
-}
 
 /*************************
 *******video******
@@ -360,7 +333,31 @@ hr {
   /* border:1px solid blue; */
 }
 
+.texto-motivacional {
+  /* position: relative; */
+  width: 17em;
+  height: 11em;
+  padding: 1em;
+  line-height: 1em;
+  font-size: 4em;
+  color:#0BA9F9;
+  /* border:1px solid red; */
+  float: left;
+}
 
+#video-texto {
+  padding-top:90px;
+  padding-bottom:40px;
+  background:#f4f4f4;
+  
+  /* border:1px solid red; */
+}
+
+.contenedor-video-texto{
+  /* width: 700px; */
+  /* margin: 0 auto; */
+  overflow: hidden;
+}
 
 /*************************
 *******introduccion******
@@ -397,21 +394,120 @@ hr {
 }
 
 /*************************
-*******tabla albiceleste******
+*******Fixture************
 **************************/
-.w-auto {
-  width: auto;
-  font-size: 2em;
-  margin: 0 auto;
+
+/* id que contiene toda la seccion */
+#fixture {
+	padding-top:90px;
+  padding-bottom:40px;
+  
+  /* background:#ffffff; */
+  /* background-image: url("https://st2.depositphotos.com/5545370/12193/v/950/depositphotos_121936302-stock-illustration-russian-background-vector-illustration.jpg"); */
+ 
+  /* Combinaciones que me gustaron: */
+  /* background:  linear-gradient(to bottom, rgba(255,255,255,0.5),rgba(255,255,255,1), rgba(255,255,255,1)), url(https://t4.ftcdn.net/jpg/01/17/66/83/240_F_117668374_15bU8Xq9IdCQGnuODAUnqqUAUM2svpOm.jpg); */
+  /* background:  linear-gradient(to bottom, rgba(255,255,255,0),rgba(255,255,255,0.5), rgba(255,255,255,1)), url(https://st2.depositphotos.com/5545370/12193/v/950/depositphotos_121936302-stock-illustration-russian-background-vector-illustration.jpg); */
+  background:  linear-gradient(to bottom, rgba(255,255,255,0.5),rgba(255,255,255,0.9), rgba(255,255,255,1)), url(https://thumbs.dreamstime.com/b/russian-world-cup-soccer-football-championship-seamless-background-pattern-russia-thin-line-icons-abstract-vector-collection-105685000.jpg);
+  /* background:  linear-gradient(to bottom, rgba(255,255,255,0),rgba(255,255,255,0.7),rgba(255,255,255,.95)), url(https://media.istockphoto.com/vectors/russian-world-cup-soccer-football-championship-2018-seamless-pattern-vector-id896244478); */
+  /* background:  linear-gradient(to bottom, rgba(255,255,255,0.4),rgba(255,255,255,0.8),rgba(255,255,255,0.95),rgba(255,255,255,1)), url(https://s3.pixers.pics/pixers/700/FO/11/45/06/47/6/700_FO114506476_db54b9efdcc7736fde71ca5e95384516.jpg); */
 }
 
-.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-  background-color: #A9E2F3;
+
+#fixture .container{  
+  background:#ffffff;
 }
 
-.tabla-historial{
-  padding-top: 10em;
-  padding-bottom: 10em;
+.fixture-title{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 36px;
+  color: #474747;
+  text-align: center;
+  padding-bottom:1em;
+}
+
+/* div que contiene la fecha y toda la tabla  */
+.table-container{
+  padding-bottom:2em;
+}
+
+/* sizr fijo de cada columna */
+table td {
+  min-width: 16em;
+  max-width: 16em;
+}
+
+
+/* Linea horizontal arriba de la tabla */
+.h3-wrap {
+  width: 988px;
+  height: 50px;
+  display: table-cell;
+  border-bottom: solid 1px #474747;
+
+  color: #474747;
+  font-size: 21px;
+  line-height: 50px;
+
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+}
+
+/* letra del nombre del estadio y ciudad */
+.tlocation{
+  color: #666;
+}
+
+/* linea debajo de cada fila */
+tr {
+  border-bottom: 1px solid #787878;
+}
+
+
+/* centrado de la hora entre ambas banderas */
+.t-nText .t-hora-partido{
+  text-align: center;
+}
+
+/* Creo que no hace nada ahora */
+.t.away .t-nText{
+  text-align: right;
+}
+
+/* ajusto texto pegado a bandera visitante */
+.t.away .t-nText{
+  float:right;
+}
+
+/* Pongo la imagen a la izquiera del texto y centrada verticalmente*/
+.t.home img{
+  float: left;
+}
+
+/* Pongo la imagen a la derecha del texto y centrada verticalmentes*/
+.t.away img{
+  float: right;
+}
+
+.flag{
+  border: 1px solid #c7c6c6;
+  /* text-align: center; */
+  
+  /* size de las banderas */
+  width: 48px;
+  height: 32px;
+}
+
+/* Textos dentro de la tabla */
+.t-nText{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 27px;
+  line-height: 27px;
+  color: #474747;
+  text-transform: uppercase;
+
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 
