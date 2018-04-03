@@ -1,4 +1,6 @@
 jQuery(document).ready(function () {
+    $('#iRehacer').css("display","none");
+
     $('#isanpa').change(function () {
         /*Cada vez que el range cambie de valor, 
         se cambiará el texto del label valor-range con el valor del input */
@@ -248,18 +250,7 @@ var jForm = {
         this.deshabilitar();
     },
     deshabilitar: function () {
-        $("input[name=debut]").prop('disabled',true);
-        $("input[name=arcampeon]").prop('disabled',true);
-        $("input[name=maxpresencias]").prop('disabled',true);
-        $("input[name=maxgoles]").prop('disabled',true);
-        $("input[name=campeones86]").prop('disabled',true);
-        $("input[name=dtargentina]").prop('disabled',true);
-        $("input[name=goles2014]").prop('disabled',true);
-        $("input[name=rivalesarg]").prop('disabled',true);
-        $("input[name=chancesarg]").prop('disabled',true);
-        $("input[name=puntajesanpaoli]").prop('disabled',true);
-        $("input[name=nombre]").prop('disabled',true);
-        $("input[name=nacimiento]").prop('disabled',true);
-        $("input[name=mail]").prop('disabled',true);
+        $('#iFinalizar').prop('disabled',true);
+        $('#iRehacer').css("display","inline");
     }
 }
