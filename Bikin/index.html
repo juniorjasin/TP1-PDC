@@ -136,8 +136,46 @@
   <!-- FIN imagenes carousel -->
   </br>
   </br>
+  <div id="flash_sales">
+    <div class="container">
+      <div class="col-xs-12">
+        <div class="col-md-5 col-xs-10">
+          <h2 class="texto">PREPARATE</h2>
+          <h2 class="texto">FALTA POCO PARA EL MUNDIAL!</h2>
+        </div>
+        <div class="col-md-4 col-xs-12 reloj">
+          <p id="quedan" class="time-rest">FALTAN:</p>
+          <div class="inline-block">
+            <h2 class="counter1" id="dias">00</h2>
+            <span class="pre block">días</span>
+          </div>
+          <div class="inline-block">
+            <h2 class="counter" id="horas">00</h2>
+            <span class="pre block">horas</span>
+          </div>
+          <div class="inline-block">
+            <h2 class="counter" id="min">00</h2>
+            <span class="pre block">min</span>
+          </div>
+          <div class="inline-block">
+            <h2 class="counter" id="seg">00</h2>
+            <span class="pre block">seg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </br>
+  </br>
+  </br>
+  </br>
 
   <div id="introduccion">
+    <p class="parrafo-intro">
+      La seleccion Argentina de futbol es uno de los equipos más exitosos del fútbol mundial. Fue campeona en dos oportunidades
+      de la Copa Mundial de Fútbol y finalista en otras tres ocasiones (1930, 1990 y 2014).
+    </p>
+    </br>
     <div class="mybox">
 
       <!-- Efecto al pasar sobre imagen
@@ -148,12 +186,15 @@
           </a>
         </div>
       </figure> -->
-      <img src="img/ru2018.png" class="logo-rusia">
-      <p class="parrafo-intro">
-        La seleccion Argentina de futbol es uno de los equipos más exitosos del fútbol mundial. Fue campeona en dos oportunidades
-        de la Copa Mundial de Fútbol y finalista en otras tres ocasiones (1930, 1990 y 2014). Ademas, luego de Uruguay, la
-        segunda selección que más veces ha ganado la Copa América, lográndola en 14 ocasiones.
-      </p>
+      <div class="image">
+        <img src="img/mundial78.jpg">
+      </div>
+      <div class="image">
+        <img src="img/mundial86.jpg">
+      </div>
+      <div class="image">
+        <img src="img/mundial2014.jpg">
+      </div>
     </div>
   </div>
 
@@ -601,16 +642,20 @@
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
-            <label><input id="iar78" name="debut" type="radio" class="custom-control-input" value="var78"> Argentina 78 </label>
+            <label>
+              <input id="iar78" name="debut" type="radio" class="custom-control-input" value="var78"> Argentina 78 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="ies82" name="debut" type="radio" class="custom-control-input" value="ves82"> España 82 </label>            
+            <label>
+              <input id="ies82" name="debut" type="radio" class="custom-control-input" value="ves82"> España 82 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="ime86" name="debut" type="radio" class="custom-control-input" value="vme86"> Mexico 86 </label>            
+            <label>
+              <input id="ime86" name="debut" type="radio" class="custom-control-input" value="vme86"> Mexico 86 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="iit90" name="debut" type="radio" class="custom-control-input" value="vit90"> Italia 90 </label>            
+            <label>
+              <input id="iit90" name="debut" type="radio" class="custom-control-input" value="vit90"> Italia 90 </label>
           </div>
         </div>
 
@@ -619,16 +664,20 @@
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
-            <label><input id="im86" name="arcampeon" type="radio" class="custom-control-input" value="vm86"> Mundial 86 </label>            
+            <label>
+              <input id="im86" name="arcampeon" type="radio" class="custom-control-input" value="vm86"> Mundial 86 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="im78" name="arcampeon" type="radio" class="custom-control-input" value="vm78"> Mundial 78 </label>
+            <label>
+              <input id="im78" name="arcampeon" type="radio" class="custom-control-input" value="vm78"> Mundial 78 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="im90" name="arcampeon" type="radio" class="custom-control-input" value="vm90"> Mundial 90 </label>            
+            <label>
+              <input id="im90" name="arcampeon" type="radio" class="custom-control-input" value="vm90"> Mundial 90 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="im82" name="arcampeon" type="radio" class="custom-control-input" value="vm82"> Mundial 82 </label>
+            <label>
+              <input id="im82" name="arcampeon" type="radio" class="custom-control-input" value="vm82"> Mundial 82 </label>
             <!-- de la siguiente forma obtengo el value "on" cuando deberia obtener "vm82" nose porque pasa eso, y pasaria en todos si
             estuviera implementado de la misma forma todos los input -->
             <!-- <input id="im82" name="arcampeon" type="radio" class="custom-control-input">
@@ -857,7 +906,7 @@
 
         <div class="button-submit">
           <button id="iFinalizar" type="submit" name="boton1" class="btn btn-success">Finalizar y Enviar</button>
-          <a  href="index.html" type="button" id="iRehacer" name="boton2" class="btn btn-success">Realizar nuevamente encuesta</a>
+          <a href="index.html" type="button" id="iRehacer" name="boton2" class="btn btn-success">Realizar nuevamente encuesta</a>
         </div>
       </form>
     </div>

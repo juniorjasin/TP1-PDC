@@ -1,5 +1,8 @@
 jQuery(document).ready(function () {
-    $('#iRehacer').css("display","none");
+
+    jForm.getTime();
+
+    $('#iRehacer').css("display", "none");
 
     $('#isanpa').change(function () {
         /*Cada vez que el range cambie de valor, 
@@ -249,8 +252,40 @@ var jForm = {
 
         this.deshabilitar();
     },
+
     deshabilitar: function () {
-        $('#iFinalizar').prop('disabled',true);
-        $('#iRehacer').css("display","inline");
+        $('#iFinalizar').prop('disabled', true);
+        $('#iRehacer').css("display", "inline");
+    },
+    getTime: function () {
+        var fecha = new Date('2018', '05', '14', '00', '00', '00')
+        var hoy = new Date()
+        var dias = 0
+        var horas = 0
+        var minutos = 0
+        var segundos = 0
+
+        if (fecha > hoy) {
+            var diferencia = (fecha.getTime() - hoy.getTime()) / 1000
+            dias = Math.floor(diferencia / 86400)
+            diferencia = diferencia - (86400 * dias)
+            horas = Math.floor(diferencia / 3600)
+            diferencia = diferencia - (3600 * horas)
+            minutos = Math.floor(diferencia / 60)
+            diferencia = diferencia - (60 * minutos)
+            segundos = Math.floor(diferencia)
+
+            $('#dias').html(dias);
+            $('#horas').html(horas);
+            $('#min').html(minutos);
+            $('#seg').html(segundos);
+            window.setTimeout("jForm.getTime();", 1000);
+        }
+        else {
+            $('#dias').html('0');
+            $('#horas').html('0');
+            $('#min').html('0');
+            $('#seg').html('0');
+        }
     }
 }
