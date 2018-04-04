@@ -387,10 +387,7 @@ div.container{
   font-size: 95px;
   text-shadow:5px 5px #000;
 }
-h2{
-  margin-top: 0 !important;
-  text-shadow:2px 2px #000;
-}
+
 h2.texto{
   color:#FFF;
   font-family: "Lato",sans-serif;
