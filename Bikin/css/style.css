@@ -221,10 +221,6 @@ hr {
 	font-family:russia;	
 }
 
-.welcome {
-    text-align: center;
-}
-
 p {
 	font-family:Roboto;
 	color:#fff;	
@@ -516,11 +512,7 @@ figure.effect-chico:hover img {
   padding-bottom: 10em;
 }
 
-.parrafo-intro {
-  /* width: 5em;
-  height: 5em;
-  padding: 1em;
-  line-height: 1em; */
+.parrafo-intro {  
   font-family: -apple-system, 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell , 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   line-height: 1em;
@@ -530,20 +522,12 @@ figure.effect-chico:hover img {
 }
 
 .mybox{
-  /* padding-right: 20em;
-  padding-left: 20em; */
-  /* margin-right: auto;
-  margin-left: auto; */
   display: flex;
-  justify-content: center;
-  overflow: hidden;  
+  justify-content: center;  
 }
 
 /* clases para efecto zoom */
-.image-gallery {
-  width: auto;
-  height: auto;  
-  float: left;
+.image-gallery {    
   padding: 2px;
 }
 

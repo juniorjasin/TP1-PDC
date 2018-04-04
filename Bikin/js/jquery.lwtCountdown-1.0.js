@@ -8,7 +8,7 @@
 		$.extend(config, options);
 
 		var hoy = new Date();
-		var fecha = new Date('hu Jun 14 2018 12:00:00 GMT-0300 (-03)');
+		var fecha = new Date('thu Jun 14 2018 12:00:00 GMT-0300 (-03)');
 		var diferencia = (fecha.getTime() - hoy.getTime()) / 1000;
 		segundos = Math.floor(diferencia);
 		diffSecs = segundos;
@@ -19,7 +19,7 @@
 		if (config.omitWeeks) {
 			$.data($(this)[0], 'omitWeeks', config.omitWeeks);
 		}
-
+		
 		$('#' + $(this).attr('id') + ' .digit').html('<div class="top"></div><div class="bottom"></div>');
 		$(this).doCountDown($(this).attr('id'), diffSecs, 500);
 
@@ -41,7 +41,7 @@
 	 */
 	$.fn.doCountDown = function (id, diffSecs, duration) {
 		var hoy = new Date();
-		var fecha = new Date('hu Jun 14 2018 12:00:00 GMT-0300 (-03)');
+		var fecha = new Date('thu Jun 14 2018 12:00:00 GMT-0300 (-03)');
 
         var dias = 0;
         var horas = 0;
