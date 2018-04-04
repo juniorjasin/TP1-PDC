@@ -257,7 +257,7 @@ p {
 
 .dash {
 	height: 114px;
-	background: transparent url('/home/jrjs/Desktop/PDC/TP1-PDC/Bikin/img/dash.png') 0 0 no-repeat;
+	background: transparent url(../img/dash.png) 0 0 no-repeat;
 	float: left;
 	margin-left: 21px;
   position: relative;
@@ -511,20 +511,21 @@ figure.effect-chico:hover img {
 **************************/
 
 
-#introduccion{
+#introduccion {
   padding-top: 10em;
   padding-bottom: 10em;
 }
 
-.parrafo-intro{
+.parrafo-intro {
   /* width: 5em;
   height: 5em;
   padding: 1em;
   line-height: 1em; */
   font-family: -apple-system, 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell , 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
   line-height: 1em;
 	font-size: 2.5em; 
-  color:#0BA9F9;
+  color:#000;
   text-align: center;
 }
 
@@ -696,8 +697,15 @@ tr {
 .trivia-title{
   text-align: center;
   font-family: "Open Sans";
-  color: #0BA9F9;
+  color: #FFFFFF;
   padding-bottom: 1em;
+}
+
+.borde-redondeado{
+  border-radius: 5em 0em 5em 0em;
+  padding: 1em;
+  border: 0.3em solid #0BA9F9;
+  background-color: #0BA9F9;
 }
 
 #encuesta h4 {
@@ -714,6 +722,16 @@ tr {
   font-size: 18px;
 }
 
+
+.mb-3{
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.t-info-personal{
+  font-family: "Open Sans";
+  font-size: 1.4em;
+}
 
 .container {
   max-width: 960px;

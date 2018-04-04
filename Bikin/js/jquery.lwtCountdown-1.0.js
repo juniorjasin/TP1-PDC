@@ -1,48 +1,17 @@
-/*!
- * jQuery Countdown plugin v1.0
- * http://www.littlewebthings.com/projects/countdown/
- *
- * Copyright 2010, Vassilis Dourdounis
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
 (function ($) {
 
-	// 1ro
+	/** Arranaca el proceso. Calcula segundos hasta el mundial para llamar a doCountDown
+	 */
 	$.fn.countDown = function (options) {
 		config = {};
 
 		$.extend(config, options);
 
-		diffSecs = this.setCountDown(config);
-
-		/* Me parece que esta al pedo todo esto comentado */
-
-		// console.log("diffSecs:" + diffSecs);
-
-		// var date1 = new Date();
-		// var date2 = new Date(date1 + 30);
-		// var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-
-		// console.log("timeDiff:" + timeDiff);
-
-		diffSecs = 7000000;
+		var hoy = new Date();
+		var fecha = new Date('hu Jun 14 2018 12:00:00 GMT-0300 (-03)');
+		var diferencia = (fecha.getTime() - hoy.getTime()) / 1000;
+		segundos = Math.floor(diferencia);
+		diffSecs = segundos;
 
 		if (config.onComplete) {
 			$.data($(this)[0], 'callback', config.onComplete);
@@ -66,37 +35,13 @@
 		this.doCountDown($(this).attr('id'), $.data(this[0], 'diffSecs'), 500);
 	};
 
-	// 2do
-	$.fn.setCountDown = function (options) {
-		var targetTime = new Date();
 
-		if (options.targetDate) {
-			targetTime = new Date(options.targetDate.month + '/' + options.targetDate.day + '/' + options.targetDate.year + ' ' + options.targetDate.hour + ':' + options.targetDate.min + ':' + options.targetDate.sec + (options.targetDate.utc ? ' UTC' : ''));
-		}
-		else if (options.targetOffset) {
-			targetTime.setFullYear(options.targetOffset.year + targetTime.getFullYear());
-			targetTime.setMonth(options.targetOffset.month + targetTime.getMonth());
-			targetTime.setDate(options.targetOffset.day + targetTime.getDate());
-			targetTime.setHours(options.targetOffset.hour + targetTime.getHours());
-			targetTime.setMinutes(options.targetOffset.min + targetTime.getMinutes());
-			targetTime.setSeconds(options.targetOffset.sec + targetTime.getSeconds());
-		}
-
-		var nowTime = new Date();
-
-		diffSecs = Math.floor((targetTime.valueOf() - nowTime.valueOf()) / 1000);
-
-		$.data(this[0], 'diffSecs', diffSecs);
-
-		return diffSecs;
-	};
-
-	// 3ro
+	/** Calcula cada variable que necesita el contador (dias, horas, min, seg)
+	 *  llama a dashChangeTo pasando estos valores.
+	 */
 	$.fn.doCountDown = function (id, diffSecs, duration) {
 		var hoy = new Date();
 		var fecha = new Date('hu Jun 14 2018 12:00:00 GMT-0300 (-03)');
-		// console.log("hoy:" + hoy);
-		// console.log("fecha:" + fecha);
 
         var dias = 0;
         var horas = 0;
@@ -112,11 +57,6 @@
             minutos = Math.floor(diferencia / 60);
             diferencia = diferencia - (60 * minutos);
 			segundos = Math.floor(diferencia);
-			
-			// console.log("dias:" + dias);
-			// console.log("horas:" + horas);
-			// console.log("minutos:" + minutos);
-			// console.log("segundos:" + segundos);
 		}
 		
 		
@@ -145,14 +85,10 @@
 		}
 	};
 
-	// 4to intermitente con 5to
+	/** Realiza loop donde en cada vuelta determina que digito ira en cada posicion.
+	 *  Llama a digitChangeTo en cada vuelta. 
+	 */
 	$.fn.dashChangeTo = function (id, dash, n, duration) {
-		// console.log("dashChangeTo");
-		// console.log("id:" + id);
-		// console.log("dash:" + dash);
-		// console.log("n:" + n);
-		// console.log("duration:" + duration);
-
 
 		$this = $('#' + id);
 
@@ -163,7 +99,8 @@
 		}
 	};
 
-	// 5to intermitente con 4to
+	/** Cambia el html con nuevo digito que viene por parametro.
+	 */
 	$.fn.digitChangeTo = function (digit, n, duration) {
 		if (!duration) {
 			duration = 800;
@@ -184,5 +121,3 @@
 	};
 
 })(jQuery);
-
-
