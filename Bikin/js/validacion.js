@@ -15,6 +15,22 @@ jQuery(document).ready(function () {
 });
 
 
+function stopVideoBody(){
+    $('#video1').attr('src', $('#video1').attr('src'));
+    $('#video2').attr('src', $('#video2').attr('src'));
+    $('#video3').attr('src', $('#video3').attr('src'));
+}
+
+function stopVideo(){
+    $('#video1').attr('src', $('#video1').attr('src'));
+}
+function stopVideo2(){
+    $('#video2').attr('src', $('#video2').attr('src'));
+}
+function stopVideo3(){
+    $('#video3').attr('src', $('#video3').attr('src'));
+}
+
 var jForm = {
     valid: function (event) {
         if ($('[name=debut]:checked').length == 0) {

@@ -25,7 +25,7 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onclick="stopVideoBody()">
   <header id="header">
     <nav class="navbar navbar-fixed-top" role="banner">
       <div class="container">
@@ -169,7 +169,7 @@
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
 
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/WC1b643jt0Y" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe id="video1" width="1280" height="720" src="https://www.youtube.com/embed/WC1b643jt0Y" frameborder="0" allow="autoplay; encrypted-media"
                       allowfullscreen></iframe>
                   </div>
 
@@ -195,7 +195,7 @@
                     <i class="fa fa-linkedin"></i>
                   </a>
 
-                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="stopVideo()">Cerrar</button>
 
                 </div>
 
@@ -211,7 +211,7 @@
           <a>
             <figure class="effect-chico">
               <div class="container" data-target="#modal1" data-toggle="modal">
-                <img class="image img-fluid z-depth-1" height="480" width="640" src="https://ugc.kn3.net/i/origin/http://cde.3.depor.pe/ima/0/0/1/1/5/115025.jpg"
+                <img class="image img-fluid z-depth-1" height="480" width="640" src="https://static.lacapital.com.ar/adjuntos/203/imagenes/022/619/0022619915.jpg"
                   alt="video">
                 <div class="middle">
                   <div class="text">
@@ -243,7 +243,7 @@
                 <div class="modal-body mb-0 p-0">
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fTYgpGdvFa4" allowfullscreen></iframe>
+                    <iframe id="video2" class="embed-responsive-item" src="https://www.youtube.com/embed/fTYgpGdvFa4" allowfullscreen></iframe>
                   </div>
 
                 </div>
@@ -267,7 +267,7 @@
                     <i class="fa fa-linkedin"></i>
                   </a>
 
-                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="stopVideo2()">Cerrar</button>
 
                 </div>
 
@@ -309,7 +309,7 @@
                 <div class="modal-body mb-0 p-0">
 
                   <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WzhelIPg7po" allowfullscreen></iframe>
+                    <iframe id="video3" class="embed-responsive-item" src="https://www.youtube.com/embed/WzhelIPg7po" allowfullscreen></iframe>
                   </div>
 
                 </div>
@@ -333,7 +333,7 @@
                     <i class="fa fa-linkedin"></i>
                   </a>
 
-                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="stopVideo3()">Cerrar</button>
 
                 </div>
 
