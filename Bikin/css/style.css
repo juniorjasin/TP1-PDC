@@ -199,77 +199,19 @@ hr {
 
 
 /*************************
-*******Slider******
+*******Portada******
 **************************/
 
+#portada{
+  padding-top: 10em;
+  padding-top: 10em;
+  height: 1000px;
+  max-height: 1000px;
+  background-image: url("https://www.sundaypost.com/wp-content/uploads/sites/13/2017/10/843125374.jpg-e1507194782199.jpg");
+  /* overflow-x:hidden; */
+  background-size: cover;
+ }
 /* INICIO timer */
-
-/* TIMER 2 */
-
-
-.wrapper {
-  margin: 0 auto;
-  position: relative;
-  width: 920px;
-  z-index: 1;
-  }
-  #Content h2 {
-    display: inline-block;
-    margin: 25px 0 45px;
-    padding: 0px;
-    text-align: center;
-    font-size: 28px; 
-    font-weight: 300;
-    color: #fff;
-  line-height: 36px;
-  }
-  #Content h3 {
-  text-align: center;
-  font-size: 20px;
-  font-weight: normal;
-  display: block;
-  clear: both;
-  }
-  
-  
-  .intro{
-    font-size:22px;
-    font-weight:normal;
-    margin-bottom:30px;
-  }
-  .countdown {
-  text-align:center;
-  }
-  .styled{
-    margin-bottom: 30px;
-  }
-  .styled div {
-  display: inline-block;
-  font-size: 80px;
-  font-weight: 900;
-  text-align: center;
-  margin: 0 1px;
-  width: 136px;
-  padding: 10px 30px 53px; 
-  height: 100px;
-  background:rgba(255, 255, 255, 0.0);
-  text-shadow: none;
-  vertical-align: middle; 
-  border-right:1px solid rgba(255, 255, 255, 0.36);
-  text-shadow: 2px 2px rgba(12, 11, 11, 0.56);
-  }
-  .styled div:last-child{
-  border:none;
-  }
-  
-  #subscribe p{
-    text-align:center;
-  }
-  
-  
-
-
-/* TIMER 1 */
 
 .title h1 {
 	font-size:8em;
@@ -288,14 +230,6 @@ p {
 	color:#fff;	
 }
 
-#portada{
-  padding-top: 10em;
-  height: 1000px;
-  max-height: 1000px;
-  background-image: url("https://www.sundaypost.com/wp-content/uploads/sites/13/2017/10/843125374.jpg-e1507194782199.jpg");
-  /* overflow-x:hidden; */
-  background-size: cover;
- }
 
 .timer{
   padding-top: 1em;
@@ -571,129 +505,6 @@ figure.effect-chico:hover img {
 	transform: scale(1);
 }
 
-/*************************
-******* estilo contador ******
-**************************/
-
-div.container{
-  padding:10px;
-}
-
-#flash_sales{
-  background:#0BA9F9;
-}
-
-.cuponn{
-  background: white;
-  border-radius: 5px;
-  margin-top: 15px;
-}
-.cuponn p{
-  color: black !important;
-  font-size: 25px !important;
-  padding: 8px 0px;
-  text-align: center;
-}
-.mdi-action-alarm{
-  color: white;
-  font-size: 95px;
-  text-shadow:5px 5px #000;
-}
-
-h2.texto{
-  color:#FFF;
-  font-family: "Lato",sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin:0;
-}
-
-h2.counter1{
-  color:#FFF;
-  display: inline-block;
-  font-family: "Lato",sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  margin-right:10px;			
-  margin-top:0px;
-}
-h2.counter{
-  color:#FFF;
-  display: inline-block;
-  font-family: "Lato",sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  margin-right:10px;
-  margin-top:0px;
-}
-h2.counter:before{
-  content: ":";
-  position: relative;
-  right: 0.1em;
-}
-div.pre{
-  margin-top: -15px;
-}
-.pre{
-  font-family: "Lato",sans-serif;
-  font-size: 15px;
-  text-align: center;
-  text-transform: uppercase;
-}
-p.time-rest{
-  color:#FFF;
-  font-family: "Lato",sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: -10px;
-  margin: 0;
-  text-shadow: 2px 2px #000;
-}
-.btn-shop{
-  background-color: #428bca !important;
-  font-family: "Lato",sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: -15px;
-}
-.inline-block{
-  display:inline-block;
-}
-.block{
-  display: block;
-}
-
-
-/*************************
-*******efecto zoom en imagen******
-**************************/
-.image {
-  width: auto;
-  height: auto;  
-  float: left;
-  padding: 2px;
-}
-
-.image img {
-  -webkit-transition: all 1s ease; /* Safari and Chrome */
-  -moz-transition: all 1s ease; /* Firefox */
-  -ms-transition: all 1s ease; /* IE 9 */
-  -o-transition: all 1s ease; /* Opera */
-  transition: all 1s ease;
-  width: 590px;
-  height: 400px;
-}
-
-.image:hover img {
-  -webkit-transform:scale(1.25); /* Safari and Chrome */
-  -moz-transform:scale(1.25); /* Firefox */
-  -ms-transform:scale(1.25); /* IE 9 */
-  -o-transform:scale(1.25); /* Opera */
-   transform:scale(1.25);
-}
-
 
 /*************************
 *******introduccion******
@@ -701,8 +512,8 @@ p.time-rest{
 
 
 #introduccion{
-  padding-top:100px;
-  padding-bottom:80px;
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 
 .parrafo-intro{
@@ -710,7 +521,7 @@ p.time-rest{
   height: 5em;
   padding: 1em;
   line-height: 1em; */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell , 'Helvetica Neue', sans-serif;
   line-height: 1em;
 	font-size: 2.5em; 
   color:#0BA9F9;
@@ -727,14 +538,40 @@ p.time-rest{
   overflow: hidden;  
 }
 
+/* clases para efecto zoom */
+.image-gallery {
+  width: auto;
+  height: auto;  
+  float: left;
+  padding: 2px;
+}
+
+.image-gallery img {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+  width: 590px;
+  height: 400px;
+}
+
+.image-gallery:hover img {
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
+}
+
 /*************************
 *******Fixture************
 **************************/
 
 /* id que contiene toda la seccion */
 #fixture {
-	padding-top:90px;
-  padding-bottom:40px;
+  padding-top: 10em;
+  padding-bottom: 10em;
   
   /* background:#ffffff; */
   /* background-image: url("https://st2.depositphotos.com/5545370/12193/v/950/depositphotos_121936302-stock-illustration-russian-background-vector-illustration.jpg"); */
@@ -846,8 +683,38 @@ tr {
 
 
 /*************************
-*******Formulario******
+*******Encuesta******
 **************************/
+
+#encuesta {
+  padding-top: 10em;
+  padding-bottom: 10em;
+  
+	background:#f4f4f4;
+}
+
+.trivia-title{
+  text-align: center;
+  font-family: "Open Sans";
+  color: #0BA9F9;
+  padding-bottom: 1em;
+}
+
+#encuesta h4 {
+  font-family: "Open Sans";
+  font-size: 25px;
+}
+
+.opcion{
+  padding-bottom: 2em;
+}
+
+.opcion div label{
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+
 .container {
   max-width: 960px;
 }
@@ -872,10 +739,6 @@ tr {
   text-align: center;
 }
 
-.trivia-title{
-  font-family: "Open Sans";
-  color: #0BA9F9;
-}
 
 
 /*************************
