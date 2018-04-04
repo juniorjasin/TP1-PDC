@@ -1,4 +1,9 @@
 jQuery(document).ready(function () {
+
+    jForm.getTime();
+
+    $('#iRehacer').css("display", "none");
+
     $('#isanpa').change(function () {
         /*Cada vez que el range cambie de valor, 
         se cambiará el texto del label valor-range con el valor del input */
@@ -247,19 +252,40 @@ var jForm = {
 
         this.deshabilitar();
     },
+
     deshabilitar: function () {
-        $("input[name=debut]").prop('disabled',true);
-        $("input[name=arcampeon]").prop('disabled',true);
-        $("input[name=maxpresencias]").prop('disabled',true);
-        $("input[name=maxgoles]").prop('disabled',true);
-        $("input[name=campeones86]").prop('disabled',true);
-        $("input[name=dtargentina]").prop('disabled',true);
-        $("input[name=goles2014]").prop('disabled',true);
-        $("input[name=rivalesarg]").prop('disabled',true);
-        $("input[name=chancesarg]").prop('disabled',true);
-        $("input[name=puntajesanpaoli]").prop('disabled',true);
-        $("input[name=nombre]").prop('disabled',true);
-        $("input[name=nacimiento]").prop('disabled',true);
-        $("input[name=mail]").prop('disabled',true);
+        $('#iFinalizar').prop('disabled', true);
+        $('#iRehacer').css("display", "inline");
+    },
+    getTime: function () {
+        var fecha = new Date('2018', '05', '14', '00', '00', '00')
+        var hoy = new Date()
+        var dias = 0
+        var horas = 0
+        var minutos = 0
+        var segundos = 0
+
+        if (fecha > hoy) {
+            var diferencia = (fecha.getTime() - hoy.getTime()) / 1000
+            dias = Math.floor(diferencia / 86400)
+            diferencia = diferencia - (86400 * dias)
+            horas = Math.floor(diferencia / 3600)
+            diferencia = diferencia - (3600 * horas)
+            minutos = Math.floor(diferencia / 60)
+            diferencia = diferencia - (60 * minutos)
+            segundos = Math.floor(diferencia)
+
+            $('#dias').html(dias);
+            $('#horas').html(horas);
+            $('#min').html(minutos);
+            $('#seg').html(segundos);
+            window.setTimeout("jForm.getTime();", 1000);
+        }
+        else {
+            $('#dias').html('0');
+            $('#horas').html('0');
+            $('#min').html('0');
+            $('#seg').html('0');
+        }
     }
 }

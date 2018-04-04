@@ -193,8 +193,46 @@
   <!-- FIN imagenes carousel -->
   </br>
   </br>
+  <div id="flash_sales">
+    <div class="container">
+      <div class="col-xs-12">
+        <div class="col-md-5 col-xs-10">
+          <h2 class="texto">PREPARATE</h2>
+          <h2 class="texto">FALTA POCO PARA EL MUNDIAL!</h2>
+        </div>
+        <div class="col-md-4 col-xs-12 reloj">
+          <p id="quedan" class="time-rest">FALTAN:</p>
+          <div class="inline-block">
+            <h2 class="counter1" id="dias">00</h2>
+            <span class="pre block">días</span>
+          </div>
+          <div class="inline-block">
+            <h2 class="counter" id="horas">00</h2>
+            <span class="pre block">horas</span>
+          </div>
+          <div class="inline-block">
+            <h2 class="counter" id="min">00</h2>
+            <span class="pre block">min</span>
+          </div>
+          <div class="inline-block">
+            <h2 class="counter" id="seg">00</h2>
+            <span class="pre block">seg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </br>
+  </br>
+  </br>
+  </br>
 
   <div id="introduccion">
+    <p class="parrafo-intro">
+      La seleccion Argentina de futbol es uno de los equipos más exitosos del fútbol mundial. Fue campeona en dos oportunidades
+      de la Copa Mundial de Fútbol y finalista en otras tres ocasiones (1930, 1990 y 2014).
+    </p>
+    </br>
     <div class="mybox">
 
       <!-- Efecto al pasar sobre imagen
@@ -205,12 +243,15 @@
           </a>
         </div>
       </figure> -->
-      <img src="img/ru2018.png" class="logo-rusia">
-      <p class="parrafo-intro">
-        La seleccion Argentina de futbol es uno de los equipos más exitosos del fútbol mundial. Fue campeona en dos oportunidades
-        de la Copa Mundial de Fútbol y finalista en otras tres ocasiones (1930, 1990 y 2014). Ademas, luego de Uruguay, la
-        segunda selección que más veces ha ganado la Copa América, lográndola en 14 ocasiones.
-      </p>
+      <div class="image">
+        <img src="img/mundial78.jpg">
+      </div>
+      <div class="image">
+        <img src="img/mundial86.jpg">
+      </div>
+      <div class="image">
+        <img src="img/mundial2014.jpg">
+      </div>
     </div>
   </div>
 
@@ -782,7 +823,7 @@
       </h1>
       </br>
       <!-- action="mailto:mpastarini@ubp.edu.ar" -->
-      <form enctype='application/json' id="myform" action="mailto:someone@example.com" name="nameform" method="POST" onsubmit="jForm.valid(event)">
+      <form enctype='text/plain' id="myform" action="mailto:someone@example.com" name="nameform" method="POST" onsubmit="jForm.valid(event)">
         <h4 class="mb-3">¿En qué Mundial debutó Maradona?</h4>
         <h2 id="correccionpreg1"></h2>
 
@@ -1052,6 +1093,7 @@
 
         <div class="button-submit">
           <button id="iFinalizar" type="submit" name="boton1" class="btn btn-success">Finalizar y Enviar</button>
+          <a href="index.html" type="button" id="iRehacer" name="boton2" class="btn btn-success">Realizar nuevamente encuesta</a>
         </div>
       </form>
     </div>
