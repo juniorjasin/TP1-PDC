@@ -46,16 +46,13 @@
               <a href="#introduccion">Introduccion</a>
             </li>
             <li>
-              <a href="#video-texto">Video</a>
+              <a href="#videos">Video</a>
             </li>
             <li>
-              <a href="#tabla">Tabla</a>
+              <a href="#tabla-estadistica">Fixture</a>
             </li>
             <li>
               <a href="#pricing">Encuesta</a>
-            </li>
-            <li>
-              <a href="#our-team">Our Team</a>
             </li>
           </ul>
         </div>
@@ -65,10 +62,72 @@
     <!--/nav-->
   </header>
   <!--/header-->
-  <div class="slider">
-    <div id="about-slider">
+
+
+
+  <!-- TIMER -->
+  <div id="portada">
+
+    <div class="title">
+      <div class="container">
+        <div class="col-lg-12 welcome">
+          <h1>MUNDIAL RUSIA 2018</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="timer">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <!-- Countdown dashboard start -->
+            <div id="countdown_dashboard">
+              <div class="countDown">
+
+                <div class="dash days_dash">
+                  <span class="dash_title">dias</span>
+                  <div class="digit">0</div>
+                  <div class="digit">0</div>
+                </div>
+
+                <div class="dash hours_dash">
+                  <span class="dash_title">horas</span>
+                  <div class="digit">0</div>
+                  <div class="digit">0</div>
+                </div>
+
+                <div class="dash minutes_dash">
+                  <span class="dash_title">minutos</span>
+                  <div class="digit">0</div>
+                  <div class="digit">0</div>
+                </div>
+
+                <div class="dash seconds_dash">
+                  <span class="dash_title">segundos</span>
+                  <div class="digit">0</div>
+                  <div class="digit">0</div>
+                </div>
+
+              </div>
+            </div>
+            <!-- Countdown dashboard end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIMER -->
+
+
+  <!-- SLIDER -->
+
+  <!-- <div class="slider"> -->
+
+  <!-- <div id="about-slider">
       <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+        
+        
         <ol class="carousel-indicators visible-xs">
           <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-slider" data-slide-to="1"></li>
@@ -100,9 +159,6 @@
             </div>
           </div>
 
-
-
-
           <div class="item portada">
             <img src="img/hinchada-arg2.jpg" class="" alt="">
             <div class="carousel-caption">
@@ -126,10 +182,11 @@
         </a>
       </div>
 
-    </div>
-    <!--/#carousel-slider-->
-  </div>
+    </div> -->
+  <!--/#carousel-slider-->
+  <!-- </div> -->
   <!--/#about-slider-->
+
 
   <!--/#slider-->
 
@@ -157,443 +214,573 @@
     </div>
   </div>
 
+
+
   <!-- INICIO video -->
-  <div id="video-texto">
-    <div class="contenedor-video-texto">
-      <div class="vmotivacion">
-        <iframe width="800" height="600" src="https://www.youtube.com/embed/WC1b643jt0Y" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen> </iframe>
+
+  <!-- #BUG: cuando apretas encima del logo play NO se reproduce el video, pero en los demas lugares si -->
+  <section id="videos">
+    <div id="video">
+
+      <h1 class="section__title ">
+        REVIVÍ LOS MEJORES MOMENTOS
+      </h1>
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- VIDEO ARGENTINA -->
+
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+
+              <!--Content-->
+              <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/WC1b643jt0Y" frameborder="0" allow="autoplay; encrypted-media"
+                      allowfullscreen></iframe>
+                  </div>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Comparti tu pasion!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Cerrar</button>
+
+                </div>
+
+              </div>
+              <!--/.Content-->
+
+            </div>
+          </div>
+          <!--Modal: Name-->
+          <!-- data-target: con  data-target indicamos que video debe abrir al clickear. En general apunta
+               al a un objeto para determinar su comportamiento  -->
+          <!-- data-toggle: determina la accion a realizar -->
+          <a>
+            <figure class="effect-chico">
+              <div class="container" data-target="#modal1" data-toggle="modal">
+                <img class="image img-fluid z-depth-1" height="480" width="640" src="https://ugc.kn3.net/i/origin/http://cde.3.depor.pe/ima/0/0/1/1/5/115025.jpg"
+                  alt="video">
+                <div class="middle">
+                  <div class="text">
+                    <img width="30px" height="30px" src="img/play.png">
+                  </div>
+                </div>
+              </div>
+            </figure>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+
+
+        <!-- VIDEO RUSIA -->
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <!--Modal: Name-->
+          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+
+              <!--Content-->
+              <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fTYgpGdvFa4" allowfullscreen></iframe>
+                  </div>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Comparti tu pasion!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Cerrar</button>
+
+                </div>
+
+              </div>
+              <!--/.Content-->
+
+            </div>
+          </div>
+          <!--Modal: Name-->
+
+          <a>
+            <figure class="effect-chico">
+              <div class="container" data-toggle="modal" data-target="#modal2">
+                <img class="image img-fluid z-depth-1" height="480" width="640" src="http://www.diez.hn/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=hvB5p1iy26NJvpFs_O56Ys$daE2N3K4ZzOUsqbU5sYuXCug3I2UIYeN7_QH$437y6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg"
+                  alt="video">
+                <div class="middle">
+                  <img src="img/play.png">
+                </div>
+              </div>
+            </figure>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- VIDEO COPA -->
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <!--Modal: Name-->
+          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+
+              <!--Content-->
+              <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WzhelIPg7po" allowfullscreen></iframe>
+                  </div>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Comparti tu pasion!</span>
+                  <a type="button" class="btn-floating btn-sm btn-fb">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-sm btn-tw">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <!--Google +-->
+                  <a type="button" class="btn-floating btn-sm btn-gplus">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                  <!--Linkedin-->
+                  <a type="button" class="btn-floating btn-sm btn-ins">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+
+                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Cerrar</button>
+
+                </div>
+
+              </div>
+              <!--/.Content-->
+
+            </div>
+          </div>
+          <!--Modal: Name-->
+
+          <a>
+            <figure class="effect-chico">
+              <div class="container" data-toggle="modal" data-target="#modal3">
+                <img class="image img-fluid z-depth-1" height="480" width="640" src="https://album.mediaset.es/eimg/2017/12/01/k00FacWXEMFIzXFIouekF6.jpg?w=1024"
+                  alt="video">
+
+                <div class="middle">
+                  <div class="text">
+                    <img width="30px" height="30px" src="img/play.png">
+                  </div>
+                </div>
+              </div>
+            </figure>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
       </div>
-      <p class="texto-motivacional">Siempre que comienza un nuevo mundial la ilusion del pueblo argentino crece</p>
+      <!-- Grid row -->
+
     </div>
-  </div>
+  </section>
+
   <!-- FIN video -->
 
 
   <!--Inicio Tabla-->
 
+  <section id="tabla-estadistica">
+    <div id="fixture">
+      <div class="container">
 
+        <h1 class="fixture-title">Argentina esta en el Grupo C</h1>
 
+        <!-- Inicio Fecha 1 grupo Argentina -->
+        <div class="table-container">
+          <h3>
+            <span class="h3-wrap">sábado 16 junio</span>
+          </h3>
 
-  <div id="fixture">
-    <div class="container">
+          <div id="tabla">
+            <table class="table-responsive">
 
-      <h1 class="fixture-title">Argentina esta en el Grupo C</h1>
+              <tbody>
+                <tr>
 
-      <!-- Inicio Fecha 1 grupo Argentina -->
-      <div class="table-container">
-        <h3>
-          <span class="h3-wrap">sábado 16 junio</span>
-        </h3>
-
-        <div id="tabla">
-          <table class="table-responsive">
-
-            <tbody>
-              <tr>
-
-                <td>
-                  <div class="tlocation">
-                    <div class="mu-i-stadium">Estadio del Spartak</div>
-                    <div class="mu-i-venue">Moscú</div>
-                  </div>
-                </td>
-
-                <td>
-                  <div class="t home">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/arg.png" class="flag">
-                      </span>
-                    </div>
-                  </div>
-                  <span class="t-nText">Argentina</span>
-                </td>
-
-                <td>
-                  <span class="t-nText">
-                    <p class="t-hora-partido">
-                      16:00
-                    </p>
-                  </span>
-                </td>
-
-                <td>
-                  <div class="t away">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/isl.png" class="flag">
-                      </span>
-                      <span class="t-nText">Islandia</span>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <!-- Inicio Segunda Fila -->
-              <tr>
-                <td>
-                  <div class="tlocation">
-                    <div class="mu-i-stadium">Estadio de Kaliningrado</div>
-                    <div class="mu-i-venue">Kaliningrado</div>
-                  </div>
-                </td>
-
-                <td>
-                  <div class="t home">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/cro.png" class="flag">
-                      </span>
-                      <span class="t-nText">Croacia</span>
-                    </div>
-                  </div>
-                </td>
-
-                <td>
-                  <span class="t-nText">
-                    <p class="t-hora-partido">
-                      21:00
-                    </p>
-                  </span>
-                </td>
-
-                <td>
-                  <div class="t away">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/nga.png" class="flag">
-                      </span>
-                      <span class="t-nText">Nigeria</span>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-
-            </tbody>
-            <!--Table body-->
-          </table>
-        </div>
-
-      </div>
-
-
-      <!-- Inicio Fecha 2 grupo Argentina -->
-      <div class="table-container">
-        <h3>
-          <span class="h3-wrap">jueves 21 junio</span>
-        </h3>
-
-        <div id="tabla">
-          <table class="table-responsive">
-
-            <tbody>
-              <tr>
-
-                <td>
-                  <div class="tlocation">
-                    <div class="mu-i-stadium">Estadio de Nizhni Nóvgorod</div>
-                    <div class="mu-i-venue">Nizhni Nóvgorod</div>
-                  </div>
-                </td>
-
-                <td>
-                  <div class="t home">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/arg.png" class="flag">
-                      </span>
-                      <span class="t-nText">Argentina</span>
-                    </div>
-                  </div>
-                </td>
-
-                <td>
-                  <span class="t-nText">
-                    <p class="t-hora-partido">
-                      16:00
-                    </p>
-                  </span>
-                </td>
-
-                <td>
-                  <div class="t away">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/cro.png" class="flag">
-                      </span>
-                      <span class="t-nText">Croacia</span>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-            <!--Table body-->
-          </table>
-        </div>
-      </div>
-
-
-      <div class="table-container">
-        <h3>
-          <span class="h3-wrap">jueves 22 junio</span>
-        </h3>
-
-        <div id="tabla">
-          <table class="table-responsive">
-
-            <tbody>
-              <tr>
-
-                <td>
-                  <div class="tlocation">
-                    <div class="mu-i-stadium">Volgogrado Arena</div>
-                    <div class="mu-i-venue">Volgogrado</div>
-                  </div>
-                </td>
-
-                <td>
-                  <div class="t home">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/nga.png" class="flag">
-                      </span>
-                      <span class="t-nText">Nigeria</span>
-                    </div>
-                  </div>
-                </td>
-
-                <td>
-                  <span class="t-nText">
-                    <p class="t-hora-partido">
-                      21:00
-                    </p>
-                  </span>
-                </td>
-
-                <td>
-
-                  <div class="t away">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/isl.png" class="flag">
-                      </span>
-                      <span class="t-nText">Islandia</span>
-                    </div>
-                  </div>
-
-                </td>
-              </tr>
-
-            </tbody>
-            <!--Table body-->
-          </table>
-        </div>
-      </div>
-
-
-      <div class="table-container">
-        <!-- Inicio Fecha 3 grupo Argentina -->
-        <h3>
-          <span class="h3-wrap">Martes 26 de Junio</span>
-        </h3>
-
-        <div id="tabla">
-          <table class="table-responsive">
-
-            <tbody>
-              <tr>
-
-                <td>
-                  <div class="mu-i">
+                  <td>
                     <div class="tlocation">
-                      <div class="mu-i-stadium">Estadio Luzhnikí</div>
+                      <div class="mu-i-stadium">Estadio del Spartak</div>
                       <div class="mu-i-venue">Moscú</div>
                     </div>
-                  </div>
-                </td>
+                  </td>
 
-                <td>
-                  <div class="t home">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/nga.png" class="flag">
-                      </span>
-                      <span class="t-nText">Nigeria</span>
+                  <td>
+                    <div class="t home">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/arg.png" class="flag">
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </td>
+                    <span class="t-nText">Argentina</span>
+                  </td>
 
-                <td>
-                  <span class="t-nText">
-                    <p class="t-hora-partido">
-                      17:00
-                    </p>
-                  </span>
-                </td>
+                  <td>
+                    <span class="t-nText">
+                      <p class="t-hora-partido">
+                        16:00
+                      </p>
+                    </span>
+                  </td>
 
-                <td>
-                  <div class="t away">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/arg.png" class="flag">
-                      </span>
-                      <span class="t-nText awa">Argentina</span>
+                  <td>
+                    <div class="t away">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/isl.png" class="flag">
+                        </span>
+                        <span class="t-nText">Islandia</span>
+                      </div>
                     </div>
-                  </div>
-                </td>
-
-              </tr>
-              <tr>
-
-                <td>
-                  <div class="mu-i">
+                  </td>
+                </tr>
+                <!-- Inicio Segunda Fila -->
+                <tr>
+                  <td>
                     <div class="tlocation">
-                      <div class="mu-i-stadium">Estadio Luzhnikí</div>
-                      <div class="mu-i-venue">Moscú</div>
+                      <div class="mu-i-stadium">Estadio de Kaliningrado</div>
+                      <div class="mu-i-venue">Kaliningrado</div>
                     </div>
-                  </div>
-                </td>
+                  </td>
 
-                <td>
-                  <div class="t home">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/isl.png" class="flag">
-                      </span>
-                      <span class="t-nText">Islandia</span>
+                  <td>
+                    <div class="t home">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/cro.png" class="flag">
+                        </span>
+                        <span class="t-nText">Croacia</span>
+                      </div>
                     </div>
-                  </div>
-                </td>
+                  </td>
 
-                <td>
-                  <span class="t-nText">
-                    <p class="t-hora-partido">
-                      17:00
-                    </p>
-                  </span>
-                </td>
+                  <td>
+                    <span class="t-nText">
+                      <p class="t-hora-partido">
+                        21:00
+                      </p>
+                    </span>
+                  </td>
 
-                <td>
-                  <div class="t away">
-                    <div class="t-i i-4">
-                      <span class="t-i-wrap">
-                        <img src="http://img.fifa.com/images/flags/4/cro.png" class="flag">
-                      </span>
-                      <span class="t-nText">Croacia</span>
+                  <td>
+                    <div class="t away">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/nga.png" class="flag">
+                        </span>
+                        <span class="t-nText">Nigeria</span>
+                      </div>
                     </div>
-                  </div>
-                </td>
-              </tr>
+                  </td>
+                </tr>
 
-            </tbody>
-            <!--Table body-->
-          </table>
+              </tbody>
+              <!--Table body-->
+            </table>
+          </div>
+
         </div>
+
+
+        <!-- Inicio Fecha 2 grupo Argentina -->
+        <div class="table-container">
+          <h3>
+            <span class="h3-wrap">jueves 21 junio</span>
+          </h3>
+
+          <div id="tabla">
+            <table class="table-responsive">
+
+              <tbody>
+                <tr>
+
+                  <td>
+                    <div class="tlocation">
+                      <div class="mu-i-stadium">Estadio de Nizhni Nóvgorod</div>
+                      <div class="mu-i-venue">Nizhni Nóvgorod</div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="t home">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/arg.png" class="flag">
+                        </span>
+                        <span class="t-nText">Argentina</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <span class="t-nText">
+                      <p class="t-hora-partido">
+                        16:00
+                      </p>
+                    </span>
+                  </td>
+
+                  <td>
+                    <div class="t away">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/cro.png" class="flag">
+                        </span>
+                        <span class="t-nText">Croacia</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <!--Table body-->
+            </table>
+          </div>
+        </div>
+
+
+        <div class="table-container">
+          <h3>
+            <span class="h3-wrap">jueves 22 junio</span>
+          </h3>
+
+          <div id="tabla">
+            <table class="table-responsive">
+
+              <tbody>
+                <tr>
+
+                  <td>
+                    <div class="tlocation">
+                      <div class="mu-i-stadium">Volgogrado Arena</div>
+                      <div class="mu-i-venue">Volgogrado</div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="t home">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/nga.png" class="flag">
+                        </span>
+                        <span class="t-nText">Nigeria</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <span class="t-nText">
+                      <p class="t-hora-partido">
+                        21:00
+                      </p>
+                    </span>
+                  </td>
+
+                  <td>
+
+                    <div class="t away">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/isl.png" class="flag">
+                        </span>
+                        <span class="t-nText">Islandia</span>
+                      </div>
+                    </div>
+
+                  </td>
+                </tr>
+
+              </tbody>
+              <!--Table body-->
+            </table>
+          </div>
+        </div>
+
+
+        <div class="table-container">
+          <!-- Inicio Fecha 3 grupo Argentina -->
+          <h3>
+            <span class="h3-wrap">Martes 26 de Junio</span>
+          </h3>
+
+          <div id="tabla">
+            <table class="table-responsive">
+
+              <tbody>
+                <tr>
+
+                  <td>
+                    <div class="mu-i">
+                      <div class="tlocation">
+                        <div class="mu-i-stadium">Estadio Luzhnikí</div>
+                        <div class="mu-i-venue">Moscú</div>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="t home">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/nga.png" class="flag">
+                        </span>
+                        <span class="t-nText">Nigeria</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <span class="t-nText">
+                      <p class="t-hora-partido">
+                        17:00
+                      </p>
+                    </span>
+                  </td>
+
+                  <td>
+                    <div class="t away">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/arg.png" class="flag">
+                        </span>
+                        <span class="t-nText awa">Argentina</span>
+                      </div>
+                    </div>
+                  </td>
+
+                </tr>
+                <tr>
+
+                  <td>
+                    <div class="mu-i">
+                      <div class="tlocation">
+                        <div class="mu-i-stadium">Estadio Luzhnikí</div>
+                        <div class="mu-i-venue">Moscú</div>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="t home">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/isl.png" class="flag">
+                        </span>
+                        <span class="t-nText">Islandia</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <span class="t-nText">
+                      <p class="t-hora-partido">
+                        17:00
+                      </p>
+                    </span>
+                  </td>
+
+                  <td>
+                    <div class="t away">
+                      <div class="t-i i-4">
+                        <span class="t-i-wrap">
+                          <img src="http://img.fifa.com/images/flags/4/cro.png" class="flag">
+                        </span>
+                        <span class="t-nText">Croacia</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+              <!--Table body-->
+            </table>
+          </div>
+        </div>
+
+
       </div>
-
-
-
-
     </div>
-  </div>
 
-
-  <!-- <div id="tabla" class="tabla-historial">
-    <table class="table table-striped table-responsive w-auto ">
-     
-      <thead>
-        <tr>
-          <th>Año</th>
-          <th>Ronda</th>
-          <th>Posicion</th>
-          <th>PJ</th>
-          <th>PG</th>
-          <th>PE</th>
-          <th>PP</th>
-          <th>GF</th>
-          <th>GC</th>
-        </tr>
-      </thead>
-     
-
-      
-      <tbody>
-        <tr>
-          <th scope="row">1930</th>
-          <td>Subcampeon</td>
-          <td>2º</td>
-          <td>5</td>
-          <td>4</td>
-          <td>0</td>
-          <td>1</td>
-          <td>18</td>
-          <td>9</td>
-        </tr>
-        <tr>
-          <th scope="row">1930</th>
-          <td>Subcampeon</td>
-          <td>2º</td>
-          <td>5</td>
-          <td>4</td>
-          <td>0</td>
-          <td>1</td>
-          <td>18</td>
-          <td>9</td>
-        </tr>
-        <tr>
-          <th scope="row">1930</th>
-          <td>Subcampeon</td>
-          <td>2º</td>
-          <td>5</td>
-          <td>4</td>
-          <td>0</td>
-          <td>1</td>
-          <td>18</td>
-          <td>9</td>
-        </tr>
-        <tr>
-          <th scope="row">1930</th>
-          <td>Subcampeon</td>
-          <td>2º</td>
-          <td>5</td>
-          <td>4</td>
-          <td>0</td>
-          <td>1</td>
-          <td>18</td>
-          <td>9</td>
-        </tr>
-        <tr>
-          <th scope="row">1930</th>
-          <td>Subcampeon</td>
-          <td>2º</td>
-          <td>5</td>
-          <td>4</td>
-          <td>0</td>
-          <td>1</td>
-          <td>18</td>
-          <td>9</td>
-        </tr>
-        <tr>
-          <th scope="row">1930</th>
-          <td>Subcampeon</td>
-          <td>2º</td>
-          <td>5</td>
-          <td>4</td>
-          <td>0</td>
-          <td>1</td>
-          <td>18</td>
-          <td>9</td>
-        </tr>
-      </tbody>
-
-    </table>
-  </div> -->
-  <!--FIN Tabla-->
+  </section>
 
 
   <!-- INICIO Encuesta -->
   <div id="pricing">
     <div class="container">
+      <h1 class="trivia-title">
+        PARTICIPA EN NUESTRA TRIVIA MUNDIALISTA
+      </h1>
+      </br>
       <!-- action="mailto:mpastarini@ubp.edu.ar" -->
       <form enctype='application/json' id="myform" action="mailto:someone@example.com" name="nameform" method="POST" onsubmit="jForm.valid(event)">
         <h4 class="mb-3">¿En qué Mundial debutó Maradona?</h4>
@@ -601,16 +788,20 @@
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
-            <label><input id="iar78" name="debut" type="radio" class="custom-control-input" value="var78"> Argentina 78 </label>
+            <label>
+              <input id="iar78" name="debut" type="radio" class="custom-control-input" value="var78"> Argentina 78 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="ies82" name="debut" type="radio" class="custom-control-input" value="ves82"> España 82 </label>            
+            <label>
+              <input id="ies82" name="debut" type="radio" class="custom-control-input" value="ves82"> España 82 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="ime86" name="debut" type="radio" class="custom-control-input" value="vme86"> Mexico 86 </label>            
+            <label>
+              <input id="ime86" name="debut" type="radio" class="custom-control-input" value="vme86"> Mexico 86 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="iit90" name="debut" type="radio" class="custom-control-input" value="vit90"> Italia 90 </label>            
+            <label>
+              <input id="iit90" name="debut" type="radio" class="custom-control-input" value="vit90"> Italia 90 </label>
           </div>
         </div>
 
@@ -619,16 +810,20 @@
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
-            <label><input id="im86" name="arcampeon" type="radio" class="custom-control-input" value="vm86"> Mundial 86 </label>            
+            <label>
+              <input id="im86" name="arcampeon" type="radio" class="custom-control-input" value="vm86"> Mundial 86 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="im78" name="arcampeon" type="radio" class="custom-control-input" value="vm78"> Mundial 78 </label>
+            <label>
+              <input id="im78" name="arcampeon" type="radio" class="custom-control-input" value="vm78"> Mundial 78 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="im90" name="arcampeon" type="radio" class="custom-control-input" value="vm90"> Mundial 90 </label>            
+            <label>
+              <input id="im90" name="arcampeon" type="radio" class="custom-control-input" value="vm90"> Mundial 90 </label>
           </div>
           <div class="custom-control custom-radio">
-            <label><input id="im82" name="arcampeon" type="radio" class="custom-control-input" value="vm82"> Mundial 82 </label>
+            <label>
+              <input id="im82" name="arcampeon" type="radio" class="custom-control-input" value="vm82"> Mundial 82 </label>
             <!-- de la siguiente forma obtengo el value "on" cuando deberia obtener "vm82" nose porque pasa eso, y pasaria en todos si
             estuviera implementado de la misma forma todos los input -->
             <!-- <input id="im82" name="arcampeon" type="radio" class="custom-control-input">
@@ -862,148 +1057,8 @@
     </div>
   </div>
 
-
-
   <!-- FIN  Encuesta-->
 
-  <!-- INICIO Contact -->
-  <footer>
-    <div id="contact">
-      <div class="container">
-        <div class="text-center">
-          <h3>Contact Us</h3>
-          <p>Fusce fermen tum neque a rutrum varius odio pede</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
-            <h2>Contact us any time</h2>
-            <p>In a elit in lorem congue varius. Sed nec arcu. Etiam sit amet augue. Fusce fermen tum neque a rutrum varius
-              odio pede ullamcorp-er tellus ut dignissim nisi risus non tortor. Aliquam mollis neque.</p>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
-            <h2>Contact Info</h2>
-            <ul>
-              <li>
-                <i class="fa fa-home fa-2x"></i> Office # 38, Suite 54 Elizebth Street, Victoria State Newyork, USA 33026</li>
-              <hr>
-              <li>
-                <i class="fa fa-phone fa-2x"></i> +38 000 129900</li>
-              <hr>
-              <li>
-                <i class="fa fa-envelope fa-2x"></i> info@domain.net</li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
-                />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"
-                />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"
-                />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-
-              <button type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!--/#contact-->
-    <div class="container">
-      <div class="sub-footer">
-        <div class="text-center">
-          <div class="col-md-12">
-            <form class="form-inline">
-              <div class="form-group">
-                <button type="purchase" name="purchase" class="btn btn-primary btn-lg" required="required">Enter Your Email</button>
-              </div>
-              <div class="form-group">
-                <button type="subscribe" name="subscribe" class="btn btn-primary btn-lg" required="required">Subscribe Now</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="social-icon">
-      <div class="container">
-        <div class="col-md-6 col-md-offset-3">
-          <ul class="social-network">
-            <li>
-              <a href="#" class="fb tool-tip" title="Facebook">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="twitter tool-tip" title="Twitter">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="gplus tool-tip" title="Google Plus">
-                <i class="fa fa-google-plus"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="linkedin tool-tip" title="Linkedin">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="ytube tool-tip" title="You Tube">
-                <i class="fa fa-youtube-play"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="dribbble tool-tip" title="Dribbble">
-                <i class="fa fa-dribbble"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="pinterest tool-tip" title="Pinterest">
-                <i class="fa fa-pinterest-square"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="copyright">
-        &copy; Bikin Theme. All Rights Reserved.
-        <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bikin
-          -->
-          <a href="https://bootstrapmade.com/">Free Bootstrap Templates</a> by BootstrapMade
-        </div>
-      </div>
-    </div>
-  </footer>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery-2.1.1.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -1012,9 +1067,12 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script type="text/javascript" src="js/fliplightbox.min.js"></script>
-  <script src="js/functions.js"></script>
   <script src="contactform/contactform.js"></script>
   <script src="js/validacion.js"></script>
+
+  <script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+  <script src="js/functions.js"></script>
+
 
 </body>
 

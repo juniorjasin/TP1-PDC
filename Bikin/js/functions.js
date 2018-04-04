@@ -26,9 +26,21 @@
 	})
 	
 	$('.parallax-window').parallax({imageSrc: 'img/3.png'});
+
+	$('#countdown_dashboard').countDown({
+
+		targetOffset: {
+			'day':      0,
+			'month':    0,
+			'year':     1,
+			'hour':     0,
+			'min':      0,
+			'sec':      0
+		},
+	});
 	
-    wow = new WOW({}).init();
-		
+	wow = new WOW({}).init();
+
 
 })(jQuery);
 

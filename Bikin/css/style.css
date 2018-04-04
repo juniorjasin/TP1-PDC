@@ -19,15 +19,9 @@
 **************************/
 body {
   /* background: #fff; */
-  font-family:'Roboto', Arial, sans-serif;
-  color:#333;
-  line-height:1.6em;
-  overflow-x:hidden;
-
-  
-  /* background-image: url("./img/russia2018-theme.jpg"); */
-  /* background-color: #cccccc; */
- 
+  /* font-family:'Roboto', Arial, sans-serif; */
+  font-family: "Open Sans";
+  /* line-height:1.6em; */
 }
 
 h1,
@@ -41,9 +35,19 @@ h6 {
 	color:#000;
 }
 
+@font-face {
+  font-family: 'russia'; /*a name to be used later*/
+  src: url(/home/jrjs/Desktop/PDC/TP1-PDC/Bikin/fonts/Dusha_-_FIFA_World_Cup_2018.ttf); /*URL to font*/
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(/home/jrjs/Desktop/PDC/TP1-PDC/Bikin/fonts/OpenSans-Light.ttf); /*URL to font*/
+}
+
 h1{
   font-size: 36px;
-  color:#fff;
+  /* color:#fff; */
 }
 
 h2{
@@ -129,7 +133,7 @@ hr {
 
 .navbar-header a.navbar-brand {
    color:#fff;
-   font-family:'Roboto';
+   font-family: "Open Sans";
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -163,7 +167,7 @@ hr {
 	text-transform:;
 	font-weight:500;
 	font-size:18px;
-	font-family:'Roboto';
+  font-family: "Open Sans";
 }
 
 .navbar-fixed-top .navbar-nav > li > a:hover{
@@ -192,18 +196,172 @@ hr {
   color: #fff;
 }
 
-.portada{
- width:auto;
- height: 1100px;
- max-height: 1000px;
-}
+
 
 /*************************
 *******Slider******
 **************************/
+
+/* INICIO timer */
+
+/* TIMER 2 */
+
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 920px;
+  z-index: 1;
+  }
+  #Content h2 {
+    display: inline-block;
+    margin: 25px 0 45px;
+    padding: 0px;
+    text-align: center;
+    font-size: 28px; 
+    font-weight: 300;
+    color: #fff;
+  line-height: 36px;
+  }
+  #Content h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  display: block;
+  clear: both;
+  }
+  
+  
+  .intro{
+    font-size:22px;
+    font-weight:normal;
+    margin-bottom:30px;
+  }
+  .countdown {
+  text-align:center;
+  }
+  .styled{
+    margin-bottom: 30px;
+  }
+  .styled div {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 1px;
+  width: 136px;
+  padding: 10px 30px 53px; 
+  height: 100px;
+  background:rgba(255, 255, 255, 0.0);
+  text-shadow: none;
+  vertical-align: middle; 
+  border-right:1px solid rgba(255, 255, 255, 0.36);
+  text-shadow: 2px 2px rgba(12, 11, 11, 0.56);
+  }
+  .styled div:last-child{
+  border:none;
+  }
+  
+  #subscribe p{
+    text-align:center;
+  }
+  
+  
+
+
+/* TIMER 1 */
+
+.title h1 {
+	font-size:8em;
+	margin-top:30px;
+	color:#A40000;
+	text-align:center;	
+	font-family:russia;	
+}
+
+.welcome {
+    text-align: center;
+}
+
+p {
+	font-family:Roboto;
+	color:#fff;	
+}
+
+#portada{
+  padding-top: 10em;
+  height: 1000px;
+  max-height: 1000px;
+  background-image: url("https://www.sundaypost.com/wp-content/uploads/sites/13/2017/10/843125374.jpg-e1507194782199.jpg");
+  /* overflow-x:hidden; */
+  background-size: cover;
+ }
+
+.timer{
+  padding-top: 1em;
+}
+
+#countdown_dashboard {
+	margin-top:60px;
+}
+
+.countDown .days_dash .digit {
+	color: #00abf0;
+}
+
+.countDown .hours_dash .digit {
+	color: #00abf0;
+}
+
+.countDown .minutes_dash .digit {
+	color: #00abf0;
+}
+
+.countDown .seconds_dash .digit {
+	color: #00abf0;
+}
+
+.dash {
+	height: 114px;
+	background: transparent url('/home/jrjs/Desktop/PDC/TP1-PDC/Bikin/img/dash.png') 0 0 no-repeat;
+	float: left;
+	margin-left: 21px;
+  position: relative;
+  color: #000;
+}
+
+.dash .digit {
+	font-size: 55pt;
+	font-weight: bold;
+	float: left;
+	width: 55px;
+  text-align: center;
+	
+	position: relative;
+}
+
+.dash_title {
+	position: absolute;
+	display: block;
+	bottom: 0px;	
+	font-size:12px;
+	font-weight:500;
+	/* color: #fff; */
+	margin-left:10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family:Roboto;
+}
+/* FIN timer */
+
 .slider {
 	position: relative;	
-	padding-top:70px;
+  padding-top:70px;
+  /* background: #666; */
+  background-image: url("http://media.libero.pe/large/libero/imagen/2018/04/02/noticia-lionel-messi-argentina.jpg");
+  overflow-x:hidden;
+  background-size: cover;
+  height: 1000px;
 }
 
 .slider img {
@@ -327,36 +485,90 @@ hr {
 /*************************
 *******video******
 **************************/
-.vmotivacion {
-  float: left;
-  /* position: relative; */
-  /* border:1px solid blue; */
+
+#video{
+  padding-top: 10em;
+  padding-bottom: 10em;
+
+  height:70em;
 }
 
-.texto-motivacional {
-  /* position: relative; */
-  width: 17em;
-  height: 11em;
-  padding: 1em;
-  line-height: 1em;
-  font-size: 4em;
-  color:#0BA9F9;
-  /* border:1px solid red; */
-  float: left;
+.section__title{
+  font-family: 'russia';
+  padding-left: 2em;
+  padding-bottom: 2em;
 }
 
-#video-texto {
-  padding-top:90px;
-  padding-bottom:40px;
-  background:#f4f4f4;
-  
-  /* border:1px solid red; */
+img, .embed-responsive {
+  margin-bottom: 30px;
 }
 
-.contenedor-video-texto{
-  /* width: 700px; */
-  /* margin: 0 auto; */
-  overflow: hidden;
+.col-lg-4 {
+  padding-right: 2px  ;
+  padding-left: 2px  ;
+}
+
+.col-lg-3 {
+  padding-top: 0px;
+  padding-bottom: 0px; 
+
+  padding-right: 2px  ;
+  padding-left: 2px ;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* class de la imagen que se ve antes de tocar el video */
+.image {
+opacity: 1;
+display: block;
+width: 100%;
+height: 28em;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+/* class que contiene el logo play */
+.middle {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.middle img{
+  width: 10em;
+  height: 10em;
+}
+
+.container:hover .image {
+opacity: 0.3;
+}
+
+.container:hover .middle {
+opacity: 1;
+}
+
+/* effect-chico define el comportamiento que hace que se expande
+   la imagen al pasar el cursor por encima */
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 /*************************
@@ -534,9 +746,13 @@ tr {
   width: 3em;
 }
 
-
 .button-submit {
   text-align: center;
+}
+
+.trivia-title{
+  font-family: "Open Sans";
+  color: #0BA9F9;
 }
 
 
@@ -621,18 +837,6 @@ tr {
 	padding-bottom:20px;
 }
 
-figure.effect-chico img {
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(1.12);
-	transform: scale(1.12);
-}
-
-figure.effect-chico:hover img {
-	opacity: 0.5;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
 
 /*************************
 *******parallax******
