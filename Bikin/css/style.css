@@ -37,12 +37,12 @@ h6 {
 
 @font-face {
   font-family: 'russia'; /*a name to be used later*/
-  src: url(/home/jrjs/Desktop/PDC/TP1-PDC/Bikin/fonts/Dusha_-_FIFA_World_Cup_2018.ttf); /*URL to font*/
+  src: url(../fonts/Dusha_-_FIFA_World_Cup_2018.ttf); /*URL to font*/
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url(/home/jrjs/Desktop/PDC/TP1-PDC/Bikin/fonts/OpenSans-Light.ttf); /*URL to font*/
+  src: url(../fonts/OpenSans-Light.ttf); /*URL to font*/
 }
 
 h1{
